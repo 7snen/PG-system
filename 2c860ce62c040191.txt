@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 'لبريفكس حقق'
+const prefix = '@'
 
 client.on('ready', () => {
     console.log(`~~~~~~~~~~~~~~~~~`);
@@ -9,7 +9,7 @@ client.on('ready', () => {
     console.log(`on  ${client.guilds.size} Servers `);
     console.log(`~~~~~~~~~~~~~~~~~~~~~~~~`);
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setGame(`#TheH1ts clan|$Help`,"http://twitch.tv/y04zgamer")
+    client.user.setGame(`#PG Comunity|@Help`,"http://twitch.tv/y04zgamer")
     client.user.setStatus("dnd")
  });
  
@@ -521,7 +521,7 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/bvrNWbY**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/g9bQteY**")
      
      
   message.channel.sendEmbed(embed);
@@ -634,7 +634,7 @@ if (message.content.startsWith(prefix + 's')) {
 
 
 client.on('message', message => {
-	var prefix = "-";
+	var prefix = "$";
 if(!message.channel.guild) return;
 if(message.content.startsWith(prefix + 'move')) {
  if (message.member.hasPermission("MOVE_MEMBERS")) {
@@ -739,7 +739,7 @@ eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(10000)})
 client.on("message", message => {    
           if(!message.channel.guild) return;
    if(message.author.bot) return;
-      if(message.content === "$savatar"){ 
+      if(message.content === "@savatar"){ 
           const embed = new Discord.RichEmbed()
   
       .setTitle(`صورة ** ${message.guild.name} **`)
@@ -816,7 +816,7 @@ client.on('guildMemberAdd', member => {
                       
                                      .addField(' الـسيرفر', `${member.guild.name}`,true)
                                        
-     .setFooter("#TheH1TS CLAN ")
+     .setFooter("#PG Community ")
         .setTimestamp()
     
       channel.sendEmbed(embed);
@@ -1209,7 +1209,7 @@ client.on('message', message => {
 -ارسله للي تحب وحيآك انت وياه
 -ونورنا ياجميل :heart: 
 ------------------- **`)
-        .setFooter("By:#TheH1ts")
+        .setFooter("By:#PG Community")
       message.author.sendEmbed(Embed11)
     }
 });
@@ -1367,7 +1367,7 @@ client.on('message',async message =>{
 
 
 
-var id = ['413660639668731914','241451199499468800'] //تذكر إذا كنت تبي تضيف شخص معاك حط فاصله وبعدين العلامه '
+var id = ['490871722011131935'] //تذكر إذا كنت تبي تضيف شخص معاك حط فاصله وبعدين العلامه '
 var initcmd = '$'
 const developers = id
 const adminprefix = initcmd;
