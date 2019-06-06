@@ -1700,10 +1700,29 @@ $username | لتغير اسم البوت
 
 $editavatar | لتغير صورة البوت 
 
+$seticon | لتغير صورة السيرفر الموجود فيه البوت
 
+$setname | لتغير اسم السيرفر الموجود فيه البوت 
 
 
 هاذي هي اوامر البوت كاملة اذا كان عندك اي استفسار التواصل مع !x_ike,..#1000
+
+
+
+
+client.on("message", msg =>{
+var args = msg.content.split(" ").slice(1).join(" ")
+if(!args) return;
+if(msg.content.startsWith(prefix+"setIcon")) {
+msg.guild.setIcon(args)
+ .then(msg.reply("**Done ✅ **"))
+ .catch(console.error);
+}else if(msg.content.startsWith(prefix+"setName")) {
+    msg.guild.setName(args)
+ .then(g => msg.reply(`**Updated guild name to ${g} :white_check_mark:**`))
+ .catch(console.error);
+}
+});
 
 
 
