@@ -1601,7 +1601,7 @@ const cuttweet = [
   //help prv
   
   client.on("message", message => {
-    if (message.content === "k&help") {
+    if (message.content === "$help") {
      const embed = new Discord.RichEmbed() 
          .setColor("RANDOM")
          .setThumbnail(message.author.avatarURL)
