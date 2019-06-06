@@ -1591,4 +1591,44 @@ const cuttweet = [
 
 
 
+//help
+
+  client.on('message', msg => {
+    if(msg.content === '$help')
+    msg.reply('شـيكـ علىُ الخآآآصــ:white_check_mark:')
+  });
+  
+  //help prv
+  
+  client.on("message", message => {
+    if (message.content === "k&help") {
+     const embed = new Discord.RichEmbed() 
+         .setColor("RANDOM")
+         .setThumbnail(message.author.avatarURL)
+         .setDescription(`**
+         
+-🚀 سرعه اتصال ممتازه
+-😎 سهل الاستخدام
+-⚠ صيانه كل يوم
+-💵 مجاني بل كامل
+
+ـــــــــــــــــــــــــــــــــــــــــــ
+
+         Help|هيلب
+         
+ـــــــــــــــــــــــــــــــــــــــــــ         
+
+
+
+
+       ** `)
+       .setFooter('By | x_ike ,')
+   message.author.sendEmbed(embed)
+   
+   }
+   });
+
+
+
+
 client.login(process.env.BOT_TOKEN);
