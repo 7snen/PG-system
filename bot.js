@@ -1710,23 +1710,6 @@ $setname | لتغير اسم السيرفر الموجود فيه البوت
 
 
 
-client.on("message", msg =>{
-var args = msg.content.split(" ").slice(1).join(" ")
-if(!args) return;
-if(msg.content.startsWith(prefix+"setIcon")) {
-msg.guild.setIcon(args)
- .then(msg.reply("**Done ✅ **"))
- .catch(console.error);
-}else if(msg.content.startsWith(prefix+"setName")) {
-    msg.guild.setName(args)
- .then(g => msg.reply(`**Updated guild name to ${g} :white_check_mark:**`))
- .catch(console.error);
-}
-});
-
-
-
-
        ** `)
        .setFooter('By | x_ike ,')
    message.author.sendEmbed(embed)
