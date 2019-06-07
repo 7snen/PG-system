@@ -2046,7 +2046,7 @@ client.on("guildMemberRemove", async member => {
         fs.writeFile("./antigreff.json", JSON.stringify(anti, null, 2), function (e) {
             if (e) throw e;
         });
-    }
+   
  
 })
 
