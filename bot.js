@@ -580,7 +580,7 @@ client.on('message',message =>{
 
 
 client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","TheH1ts Members"));
+    member.addRole(member.guild.roles.find("name","PG Members"));
     });
 
 
@@ -596,7 +596,7 @@ client.on('guildMemberAdd', member=> {
 
 
 client.on('message', message => {
-  if (!message.content.startsWith(prefix)) return;
+  if (!message.content.startsWith($)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
   if (message.author.id !== '232564113459511306') return;
@@ -739,7 +739,7 @@ eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(10000)})
 client.on("message", message => {    
           if(!message.channel.guild) return;
    if(message.author.bot) return;
-      if(message.content === "@savatar"){ 
+      if(message.content === "$savatar"){ 
           const embed = new Discord.RichEmbed()
   
       .setTitle(`صورة ** ${message.guild.name} **`)
@@ -1606,6 +1606,8 @@ $user | بيعطيك معلومات عن نفسك
 $ip1 > ip10 | يعطيك سيرفرات ماينكرافت عشوائية 
 
 $emojis | لرؤية ايموجيات السيرفر
+
+$savatar | لرؤية صورة السيرفر
 
 و الرد التلقائي موجود .
 _______________________________
