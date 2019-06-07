@@ -1560,6 +1560,9 @@ client.on('message', async message => {
          .setColor("RANDOM")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**
+
+
+
          
 -🚀 سرعه اتصال ممتازه
 -😎 سهل الاستخدام
